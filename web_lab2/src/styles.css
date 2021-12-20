@@ -1,0 +1,112 @@
+.wrapper{
+	margin: 1px;
+	height: 100%;
+	min-height: 600px;
+}
+.wrapper{
+	display: grid;
+	background-color: black;
+	border: 1px solid black;
+	grid-gap: 1px;
+	grid-auto-rows: minmax(75px, auto);
+}
+/*===================================================*/
+.firstP{
+	grid-column: 1/5;
+	grid-row: 1/2;
+	background-color: rgb(198, 217, 241);
+}
+.firstP>h5{
+	width: 20%;
+	font-size: 16px;
+	border: 1px solid black;
+	background-color: white;
+	margin: 5px;
+}
+.firstP>div{
+	width: 80%;
+	text-align: right;
+}
+.secondP{
+	grid-column: 1/2;
+	grid-row: 2/5;
+	background-color: rgb(253, 233, 217);
+}
+.tffGeneral{
+	grid-column: 2/5;
+	grid-row: 2/5;
+	display: grid;
+	background-color: black;
+	grid-gap: 1px;
+}
+.sixthP{
+	grid-column: 1/5;
+	grid-row: 5/6;
+	background-color: rgb(198, 217, 241);
+}
+.sixthP>h5{
+	width: 15%;
+	font-size: 16px;
+	border: 1px solid black;
+	background-color: white;
+	margin: 5px;
+}
+.sixthP>h5>div{
+	margin: 5px;
+}
+.sixthP>div{
+	width: 90%;
+	text-align: left;
+}
+
+/*---------------------nested divs:---------------------*/
+.thirdP{
+	grid-column: 1/4;
+	grid-row: 1/2;
+	background-color: rgb(234, 241, 221);
+	justify-content: right;
+}
+.fourthP{
+	grid-column: 1/3;
+	grid-row: 2/15;
+	background-color: rgb(255, 255, 255);
+}
+.fifthP{
+	grid-column: 3/4;
+	grid-row: 2/15;
+	background-color: rgb(253, 233, 217);
+}
+/*------------------------------------------------------*/
+
+.firstP, .secondP, .thirdP, .sixthP{/*, .fourth*, .fifthP*/
+	display: flex;
+	align-items: center;
+}
+
+.fifthP{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.fifthP>form>input{
+	margin: 5px;
+}
+
+.firstP>div, .secondP>div, .thirdP>div, .fourthP>div, .fifthP>div, .sixthP>div{
+	margin: 5px;
+}
+
+a{
+	font-size: 18px;
+}
+div{
+	font-size: 18px;
+}
+img{
+	width: 30%;
+}
+
+button{
+	margin: 5px;
+}
