@@ -1,0 +1,9 @@
+4
+<img src="https://wallpapershome.ru/images/pages/pic_h/17766.jpg" alt="Первый слайд">
+<div class="slideText">Gross is beautiful</div>
+<img src="https://wallpapershome.ru/images/pages/pic_h/23341.jpg" alt="Второй слайд">
+<div class="slideText">Great mountain</div>
+<img src="https://wallpapershome.ru/images/pages/pic_h/2023.jpg" alt="Третий слайд">
+<div class="slideText">Scotland and fires</div>
+<img src="https://wallpapershome.ru/images/pages/pic_h/4474.jpg" alt="Slide image">
+<div class="slideText">This is a dog</div>

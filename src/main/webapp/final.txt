@@ -1,0 +1,16 @@
+3
+<div class="slider">
+<div class="item">
+<img src="https://wallpapershome.ru/images/pages/pic_h/17766.jpg" alt="Первый слайд">
+<div class="slideText">Gross is beautiful</div>
+</div>
+<div class="item">
+<img src="https://wallpapershome.ru/images/pages/pic_h/23341.jpg" alt="Второй слайд">
+<div class="slideText">Great mountain</div>
+</div>
+<div class="item">
+<img src="https://wallpapershome.ru/images/pages/pic_h/2023.jpg" alt="Третий слайд">
+<div class="slideText">Scotland and fires</div>
+</div>
+<a class="prev" onclick="minusSlide()">&#10094;</a>
+<a class="next" onclick="plusSlide()">&#10095;</a></div>

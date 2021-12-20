@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta charset="utf-8">
+	<title>Main page</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="firstP">
+			<h5>Restore Our Future!</h5>
+			<div>Wolf is the largest extant member of the family Canidae</div>
+		</div>
+		<div class="secondP">
+			<div>
+				Menu:<br>
+				1. <a href="main.html">Main page</a><br>
+				2. <a href="second.html">Second page</a><br>
+			</div>
+		</div>
+		<div class="tffGeneral">
+		<div class="thirdP">
+			<div>The tiger (Panthera tigris) is the largest living cat species and a member of the genus Panthera. It is most recognisable for its dark vertical stripes on orange-brown fur with a lighter underside</div>
+		</div>
+			<div class="fourthP">
+				<div>4-th block</div><br>
+				<form name="slidesForm" action="MainServlet" method="post">
+					<div>Text: </div><input type="text" name="userText"><br>
+					<div>Background: </div><input type="text" name="userBackgroundURL"><br>
+
+					<input type="button" value="Add new slide" onclick="sendF(0)">
+					<input type="button" value="Rewrite with slide" onclick="sendF(1)">
+				</form><br>
+				<script>
+					function sendF(isRewrite) {
+						let queryString = "MainServlet?";
+						if(isRewrite == 1) queryString += "isRewrite=1&";
+						let formData = new FormData(document.slidesForm);
+
+						let formKeys = formData.keys();
+						let key = formKeys.next();
+						while(key.value != null){ // append all form elements to query
+							queryString += key.value + "=" + formData.get(key.value) + "&";
+							key = formKeys.next();
+						}
+
+						let xhr = new XMLHttpRequest();
+						xhr.open("GET", queryString, true);
+						xhr.send();
+					}
+				</script>
+			</div>
+			<div class="fifthP">
+				<div>Parrots are birds of the roughly 398 species</div>
+				<form name="form5">
+					<input type="text" name="textField"><br>
+					<input type="checkbox" name="checkbox">
+				</form>
+			</div>
+		</div>
+		<div class="sixthP">
+			<div></div>
+			<h5>From Hope to Higher Ground!</h5>
+		</div>
+	</div>
+<script type="text/javascript" src="bold5.js"></script>
+<script type="text/javascript" src="cookiesd.js"></script>
+<script type="text/javascript" src="dynamic.js"></script>
+<script type="text/javascript" src="table.js"></script>
+</body>
+</html>

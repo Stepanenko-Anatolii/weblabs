@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="slider.css">
+	<script type="text/javascript" src="helpFunctions.js"></script>
+	<meta charset="utf-8">
+	<title>Second page</title>
+</head>
+<body onload="loadDiv()">
+	<div class="wrapper">
+		<div class="firstP">
+			<h5>Restore Our Future!</h5>
+			<div>Wolf is the largest extant member of the family Canidae</div>
+		</div>
+		<div class="secondP">
+			<div>
+				Menu:<br>
+				1. <a href="main.html">Main page</a><br>
+				2. <a href="second.html">Second page</a><br>
+			</div>
+		</div>
+		<div class="tffGeneral">
+		<div class="thirdP">
+			<div>The tiger (Panthera tigris) is the largest living cat species and a member of the genus Panthera. It is most recognisable for its dark vertical stripes on orange-brown fur with a lighter underside</div>
+		</div>
+			<div class="fourthP">
+				<div id="divStore"></div>
+				<script>
+					function loadDiv() {
+						let xhr = new XMLHttpRequest();
+						xhr.onreadystatechange = function() {
+							if (this.readyState == 4 && this.status == 200) {
+								document.getElementById("divStore").innerHTML =
+										this.responseText;
+								showSlides(slideIndex);
+							}
+						};
+
+						let realPathToBuffer = getCurrentPath() + "/final.txt";
+						xhr.open("POST", realPathToBuffer, true);
+						xhr.send();
+					}
+				</script>
+			</div>
+			<div class="fifthP">
+				<div>
+					<ul>
+    					<li>Parrots are birds of the roughly 398 species</li>
+    					<li>In 92 genera comprising the order Psittaciformes</li>
+    					<li>Found mostly in tropical and subtropical regions</li>
+  					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="sixthP">
+			<div>Cattles are wery good</div>
+			<h5>From Hope to Higher Ground!</h5>
+		</div>
+	</div>
+	<script type="text/javascript" src="sliderAnimation.js"></script>
+</body>
+</html>
